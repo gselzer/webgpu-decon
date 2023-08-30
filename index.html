@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS759 Final Project</title>
+</head>
+<body>
+<h1>GPU-based Image Deconvolution</h1>
+<div class="image_param">
+    <label for="input_image">Enter your input:</label>
+    <input type="file" accept="image/*" id="fileinput" name="input_image"/>
+</div>
+<div>
+    <br/>
+    <button type="button", id="convolve_cpu">Convolve</button>
+    <button type="button", id="convolve_gpu">Convolve (GPU)</button>
+    <button type="button", id="deconvolve_cpu">Deconvolve</button>
+    <button type="button", id="deconvolve_gpu">Deconvolve (GPU)</button>
+
+    <canvas id="image_canvas" width="0" height="0"></canvas>
+    
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
